@@ -6,10 +6,8 @@ class ComplexNumber:
 
     def __add__(self, other):
         return f'z1 + z2 = {self.a + other.a} + {self.b + other.b} * i'
-
     def __mul__(self, other):
         return f'z1 * z2 = {self.a * other.a - (self.b * other.b)} + {self.b * other.a} * i'
-
     def __str__(self):
         return f' {self.a} + {self.b} * i'
 

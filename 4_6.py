@@ -8,7 +8,6 @@ class StoreMashines:
         self.my_store_full = []
         self.my_store = []
         self.my_unit = {'device model': self.name, 'price per unit': self.price, 'quantity': self.quantity}
-
     def __str__(self):
         return f'{self.name} price {self.price} quantity {self.quantity}'
 
@@ -32,7 +31,6 @@ class StoreMashines:
             return f'exit'
         else:
             return StoreMashines.reception(self)
-
 class Printer(StoreMashines):
     def to_print(self):
         return f' print  {self.numb} times'
